@@ -24,7 +24,17 @@ const page = () => {
   return (
     <div className="flex justify-center items-center h-screen overflow-hidden bg-white py-[10px]">
       <div className="relative flex justify-center items-center flex-col mb-[85px] md:mb-[0px] h-[85%] sm:h-auto w-[90%] md:w-[50%] lg:w-[40%] xl:w-[30%] mx-auto bg-white rounded-2xl shadow-xl border-2 border-[#022352] p-2 sm:p-5">
-        <div className="absolute top-0 left-0 w-full h-full z-[1]">
+        <div
+          className="absolute top-0 left-0 w-full h-full z-[1]"
+          style={{
+            backgroundImage: "url('/copy/background4.jpeg')",
+            backgroundSize: "cover",
+            backgroundPosition: "center",
+            backgroundRepeat: "no-repeat",
+            borderRadius: "20px",
+            opacity: 0.3,
+          }}
+        >
           {/* <ParticleNetwork color="#CDA93B" numParticles={50} /> */}
           {/* <SplitDualDotWave
             topConfig={{
@@ -87,7 +97,7 @@ const page = () => {
           <div className="flex justify-center items-center gap-4 sm:gap-6 my-[10px] md:my-[20px] lg:my-[15px] z-10 relative">
             <a
               href="mailto:rowena@edtechgcc.com"
-              className="transform hover:scale-110 transition-transform"
+              className="transform hover:scale-105 transition-transform"
             >
               <Image
                 src="/copy/mail-icon1.svg"
@@ -101,7 +111,7 @@ const page = () => {
               href="https://www.edtechgcc.com/"
               target="_blank"
               rel="noopener noreferrer"
-              className="transform hover:scale-110 transition-transform"
+              className="transform hover:scale-105 transition-transform"
             >
               <Image
                 src="/copy/globe-icon1.svg"
@@ -161,7 +171,7 @@ const page = () => {
             </a>
 
             <a
-              href="https://www.youtube.com/channel/UCu9k4yxBqDq60Dwju7Dc90Q"
+              href="http://linkedin.com/in/edtechtrainingandconsultancy"
               target="_blank"
               rel="noopener noreferrer"
               className="transform hover:scale-110 transition-transform"
