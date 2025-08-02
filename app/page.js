@@ -100,7 +100,7 @@ const page = () => {
               className="transform hover:scale-105 transition-transform"
             >
               <Image
-                src="/copy/mail-icon1.svg"
+                src="/copy/mail-icon2.svg"
                 alt="Mail"
                 className="w-[50px] lg:w-[50px]"
                 width={75}
@@ -114,7 +114,7 @@ const page = () => {
               className="transform hover:scale-105 transition-transform"
             >
               <Image
-                src="/copy/globe-icon1.svg"
+                src="/copy/globe-icon2.svg"
                 alt="Website"
                 className="w-[50px] lg:w-[50px]"
                 width={75}
