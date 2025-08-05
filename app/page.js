@@ -188,7 +188,7 @@ const page = () => {
             </a>
 
             <a
-              href="https://www.youtube.com/channel/UCu9k4yxBqDq60Dwju7Dc90Q"
+              href="https://www.youtube.com/channel/UChPLe6g7yloI6cQKfCITTyw"
               target="_blank"
               rel="noopener noreferrer"
               className="transform hover:scale-110 transition-transform"
