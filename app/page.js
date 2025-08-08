@@ -6,9 +6,6 @@ import "swiper/css/pagination";
 import "swiper/css/effect-fade";
 import { Pagination, Mousewheel } from "swiper/modules";
 import { useEffect, useState } from "react";
-import ParticleNetwork from "./new1/Comp";
-import DualDotWave from "./new1/DotWave";
-import SplitDualDotWave from "./new1/DotWave";
 
 const page = () => {
   const [isMounted, setIsMounted] = useState(false);
@@ -24,37 +21,16 @@ const page = () => {
   return (
     <div className="flex justify-center items-center h-screen overflow-hidden bg-white py-[10px]">
       <div className="relative flex justify-center items-center flex-col mb-[85px] md:mb-[0px] h-[85%] sm:h-auto w-[90%] md:w-[50%] lg:w-[40%] xl:w-[30%] mx-auto bg-white rounded-2xl shadow-xl border-2 border-[#022352] p-2 sm:p-5">
-        <div
-          className="absolute top-0 left-0 w-full h-full z-[1]"
-          style={{
-            backgroundImage: "url('/copy/background4.jpeg')",
-            backgroundSize: "cover",
-            backgroundPosition: "center",
-            backgroundRepeat: "no-repeat",
-            borderRadius: "20px",
-            opacity: 0.3,
-          }}
-        >
-          {/* <ParticleNetwork color="#CDA93B" numParticles={50} /> */}
-          {/* <SplitDualDotWave
-            topConfig={{
-              color: "#F1F1F2",
-              rows: 20,
-              columns: 50,
-              baseRadius: 1.5,
-              waveSpeed: 0.01,
-              waveAmplitude: 2,
-            }}
-            bottomConfig={{
-              color: "#F1F1F2",
-              rows: 15,
-              columns: 30,
-              baseRadius: 3,
-              waveSpeed: 0.01,
-              waveAmplitude: 2,
-            }}
-          /> */}
-        </div>
+        {/* Background Video */}
+        <video
+          autoPlay
+          muted
+          loop
+          playsInline
+          src="/copy/bg_video2.mov"
+          className="absolute top-0 left-0 w-full h-full object-cover rounded-[12px] z-[1]"
+        />
+
         {/* Logo */}
         <div className="flex justify-center mb-[20px] sm:mb-[20px] xl:mb-[30px]  mt-5 sm:mt-[20px] z-10 relative">
           <Image
@@ -195,7 +171,7 @@ const page = () => {
             >
               <div className="w-[30px] sm:w-[30px]  rounded-[5px]">
                 <Image
-                  src="/copy/youtube2.png"
+                  src="/copy/youtube3.png"
                   alt="Youtube"
                   width={500}
                   height={500}
@@ -242,7 +218,7 @@ const page = () => {
               <span className="absolute inset-0 rounded-[16px] bg-white opacity-30 scale-0 group-hover:scale-150 group-hover:opacity-0 transition-all duration-1000"></span>
 
               {/* Glow effect */}
-              <span className="absolute inset-0 -z-10 rounded-[16px] bg-green-500 blur-md opacity-70 animate-glow"></span>
+              <span className="absolute inset-0 -z-10 rounded-[16px] bg-green-500 blur-[1px] opacity-70 animate-glow"></span>
 
               <svg
                 className="text-white w-[44px] sm:w-[30px] xl:w-[40px] animate-rotateBounce relative z-10"
